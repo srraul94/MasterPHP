@@ -1,0 +1,63 @@
+{% extends 'layouts/master.html.twig'%}
+
+{% block titulo %} Animales {% endblock %}
+
+{% block cabecera %}
+    <h1> Animales!</h1>
+{% endblock %}
+
+{% block contenido %}
+    
+    {#
+    <h1>{{ title }}</h1>
+    <h1>{{ nombre }}</h1>
+    <h2>{{apellidos}}</h2> 
+    #}
+
+    {% set perro = 'pastor aleman' %}
+    {{ perro }}
+
+    {# trabajar con array #}
+    {{ dump(animales)}}
+    {{ animales[2]}}
+
+    {# trabajar con asociativos #}
+     {{ dump(aves)}}
+     {{aves.estado ~ '-'~ aves.tipo }}
+    
+    {# Condicionales #}
+    {% if aves.tipo == 'palomo' %}
+        <h4>Un palomo</h4>
+    {% else %}
+        <h4>No hay palomo</h4>
+    {% endif %}
+
+    {# Bucles #}
+    {% if animales|length > 0 %}
+        <ul>
+            {% for animal in animales %}
+                <li>{{animal}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% for i in 0..10 %}
+        {{i}}<br/>
+    {% endfor %}
+
+    {% if aves.color starts with 'g' %}
+        <p> empieza por G </>
+    {% endif %}
+
+    {% if aves.color ends with 'is' %}
+        <p> acaba en IS </>
+    {% endif %}
+    <hr>
+
+    {{include('partials/funciones.html.twig',{'nombre':'pepe'})}}
+
+
+
+
+
+{% endblock %}

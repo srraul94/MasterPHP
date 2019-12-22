@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+       {% block titulo %} Inicio {% endblock %}
+       - Máster en PHP - Symfony
+    </title>
+</head>
+<body>
+    <div id="header">
+        {% block cabecera %}
+            <h1>Cabecera de la plnatilla</h1>
+        {% endblock %}
+        <hr>
+    </div>
+
+    <section id="content">
+        {% block contenido %}
+            <p>Contenido por defecto</p>
+        {% endblock %}
+    </section>
+
+    <footer>
+        Raul sanchez rubio &copy;
+    </footer>
+</body>
+</html>

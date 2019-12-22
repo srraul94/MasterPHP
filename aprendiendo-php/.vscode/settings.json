@@ -1,0 +1,14 @@
+{
+    "auto-close-tag.activationOnLanguage": [
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "cfml",
+        "HTML (Eex)"
+    ]
+}

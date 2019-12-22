@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mis tareas{% endblock %}
+
+{% block body %}
+
+
+<div class="example-wrapper">
+    <h2>Mis tareas</h2>
+    <table>
+        <tr>
+            <th>Tarea</th>
+            <th>Prioridad</th>
+            <th>Horas presupuestadas</th>
+            <th>Acciones</th>
+        </tr>
+
+        {% for task in tasks %}
+            <tr>
+                <td>{{task.title}}</td>
+                <td>
+                    {% if task.priority == 'high' %}
+                       {{ 'Alta' }}
+                    {% endif %}
+                    {% if task.priority == 'medium' %}
+                        {{ 'Media' }}
+                    {% endif %}
+                    {% if task.priority == 'low' %}
+                        {{ 'Baja' }}
+                    {% endif %}
+                </td>
+                <td>{{task.hours}}</td>
+                <td class="buttons">
+                    <a class="btn-show" href="{{ path('task_detail',{'id':task.id}) }}">Ver</a>
+                    <a class="btn-edit" href="">Editar</a>
+                    <a class="btn-delete" href="">Eliminar</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</div>
+{% endblock %}

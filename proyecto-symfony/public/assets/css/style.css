@@ -1,0 +1,143 @@
+body{
+    background: white;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.example-wrapper { 
+    margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; 
+}
+.example-wrapper code { 
+    background: #F5F5F5; padding: 2px 6px; 
+}
+
+#header{
+    margin: 1em auto;
+    max-width: 800px;
+    width: 95%; 
+    font: 18px/1.5 sans-serif; 
+}
+
+#menu{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    background: #eeee;
+    line-height: 50px;
+ 
+}
+
+#menu li {
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+#menu li.right{
+    float: left;
+
+}
+
+#menu a{
+   color: #444;
+   text-decoration: none;
+   transition: all 100ms;
+}
+
+#menu li:hover{
+    color: white;
+    background: #444;
+ }
+
+ #menu li:hover a{
+    color: white;
+ }
+
+label{
+    display: block;
+    width: 80%;
+    margin-top:15px ;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select{
+    width: 70%;
+    padding: 8px;
+}
+
+button,
+input[type="submit"] {
+    padding: 8px;
+    margin-top: 15px;
+    background: green;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    padding: 8px;
+    margin-top: 15px;
+    background: yellowgreen;
+    transition: all 300ms;
+}
+
+table {
+    width: 100%;
+}
+
+table th,
+table td{
+    background: rgb(192, 190, 190);
+    padding:15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-bottom: 1px solid #eee ;
+    text-align: center;
+}
+
+table td{
+    background: rgb(231, 226, 226);
+}
+.buttons{
+    display: block;
+}
+
+
+.buttons a{
+    text-decoration: none;
+    border: 1px solid white;
+    padding:10px;
+    color:white;
+    background: green;
+}
+
+.buttons .btn-delete{
+    color:white;
+    background: red;
+}
+
+
+.buttons .btn-edit{
+    color:white;
+    background: orange;
+}
+
+.data-task{
+    color:#ccc;
+}
+
+

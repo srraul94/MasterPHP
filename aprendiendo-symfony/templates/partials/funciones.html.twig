@@ -1,0 +1,25 @@
+
+    {# Funciones predefinidas #}
+    {{ min([9,21,3,123])}}
+    {{ random(animales)}}
+    {{ max([9,21,3,123])}}
+
+    {{nombre}}
+    {% for i in range(0,100,5) %}
+        <p>{{i}}</p>
+    {% endfor %}
+
+    <h1> Filtros </h1>
+    {{animales|length}}
+    {% set email = '      perro@mail.com ' %}
+    {{ dump(email|trim|upper|lower) }}
+
+     <h1> Extensiones </h1>
+    {{ multiplicar(3)|raw }}
+    {{ 134|multiplicar|raw }}
+
+
+
+
+    <br>
+

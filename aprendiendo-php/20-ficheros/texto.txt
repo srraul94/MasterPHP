@@ -1,0 +1,5 @@
+Hola soy un fichero de texto
+el pajaro se ha muerto
+que pena me da
+Soy un texto escrito por fwriteSoy un texto escrito por fwrite
+Soy un texto escritm asmd ma,sd o por fwrite
